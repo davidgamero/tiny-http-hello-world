@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: rust-test
-  namespace: namespace-workflow-1678734092643
+  name: erin
+  namespace: namespace-workflow-1678743903656
 spec:
   type: LoadBalancer
   selector:
-    app: rust-test
+    app: erin
   ports:
     - protocol: TCP
       port: 8000

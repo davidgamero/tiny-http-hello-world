@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rust-test
+  name: erin
   labels:
-    app: rust-test
-  namespace: namespace-workflow-1678734092643
+    app: erin
+  namespace: namespace-workflow-1678743903656
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rust-test
+      app: erin
   template:
     metadata:
       labels:
-        app: rust-test
+        app: erin
     spec:
       containers:
-        - name: rust-test
-          image: acrworkflow1678734092643.azurecr.io/image-workflow-1678734092643:latest
+        - name: erin
+          image: acrworkflow1678743903656.azurecr.io/image-workflow-1678743903656:latest
           ports:
             - containerPort: 8000
