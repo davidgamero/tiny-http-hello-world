@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rust-test
+  namespace: namespace-workflow-1678734092643
+spec:
+  type: LoadBalancer
+  selector:
+    app: rust-test
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
