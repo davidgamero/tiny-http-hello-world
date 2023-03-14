@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: erin
-  namespace: namespace-workflow-1678743903656
+  name: davidgamero-test6
+  namespace: namespace-workflow-1678824331072
 spec:
   type: LoadBalancer
   selector:
-    app: erin
+    app: davidgamero-test6
   ports:
     - protocol: TCP
       port: 8000
